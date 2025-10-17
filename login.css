@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*log in form*/
+
+.login-container{
+    backdrop-filter: blur(6px);
+  height: 500px;
+  width:500px;
+  display: flex;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  background: #837d7dff;
+  padding: 2rem;
+  box-sizing: border-box;
+  color:blue;
+  border-radius: 20px;
+}
+
