@@ -1,0 +1,65 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.bg-image {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+}
+.register-container {
+    z-index: 1;
+    /*background: rgba(249, 248, 248, 0.95);*/
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+    height: 100%;
+}
+input {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    box-shadow: black;
+}
+.register-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+button {
+    padding: 12px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #74ebd5;
+    color: white;
+    cursor: pointer;
+    width: 230px;
+    transition: background-color 0.3s ease;
+}

@@ -28,6 +28,8 @@ body {
   line-height: 1.6;
   color: #ffffff;
   background-color: #000000;
+  overflow-x: hidden; /* prevent horizontal scroll that makes centering look off */
+  
 }
 
 /* Navbar - Dark Theme */
@@ -245,14 +247,16 @@ body {
 }
 .img1 {
   position: relative;
-  left: 30%;
+  left: 0;
 }
 
 .main-image {
   width: 100%;
   max-width: 400px;
   height: 250px;
+  position: relative;
   object-fit: cover;
+  left: 30%;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
@@ -297,10 +301,10 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding: 20rem;
+  padding: 6rem 2rem; /* reduce huge horizontal padding that caused overflow */
   background: linear-gradient(135deg, #1f1f1f 0%, #000000 100%);
   gap: 4rem;
-  max-height: 100vh;
+  max-height: none;
 }
 
 .about-content {
@@ -567,7 +571,7 @@ body {
 .business-hours-card {
   flex: 1;
   width: 100%;
-  max-width: 450px;
+  max-width: 480px;
   background: rgba(60, 60, 60, 0.8);
   backdrop-filter: blur(10px);
   padding: 3rem;
@@ -587,7 +591,7 @@ body {
   border-radius: 25px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 500px;
+  max-width: 480px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -612,6 +616,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
   flex: 1;
 }
 
@@ -660,7 +665,7 @@ body {
   border-radius: 25px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 400px;
+  max-width: 480px;
   height: 550px;
   width: 100%;
   box-sizing: border-box;
@@ -677,7 +682,7 @@ body {
   border-radius: 25px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 400px;
+  max-width: 480px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -726,7 +731,7 @@ body {
 }
 
 /* RESPONSIVE FIX */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
     align-items: center;
@@ -784,7 +789,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navbar {
     padding: 1rem;
     flex-direction: column;
@@ -826,11 +831,24 @@ body {
     flex-direction: column;
     padding: 4rem 1rem;
     gap: 2rem;
+  max-height: none; /* prevent clipping on small screens */
   }
   
   .contact {
     min-height: 80vh;
     padding: 1rem;
+  }
+
+  /* Make about image scale nicely on mobile */
+  .about-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce about heading size a bit for narrow viewports */
+  .about-content h2 {
+    font-size: 2.2rem;
   }
   
   .contact-container {
@@ -838,21 +856,30 @@ body {
     gap: 1.5rem;
   }
   
-  .contact-form,
+  .contact-form{
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+    height: auto;
+  }
   .business-hours-card {
     padding: 2rem;
-    max-width: 400px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    min-height: 400px;
   }
   
 
+  /* reset accidental giant heading override */
   .business-hours-card h2 {
-    font-size: 20rem;
-    position: relative;
+    font-size: 1.8rem;
+    position: static;
     text-align: center;
-    top: 500px;
+    top: auto;
   }
+
+  /* prevent hero image offset from causing horizontal scroll */
+  .img1 { left: 0; }
   
   .services-grid {
     grid-template-columns: 1fr;
@@ -870,7 +897,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero-content h1 {
     font-size: 2rem;
   }

@@ -1,30 +1,106 @@
-body{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/*log in form*/
 
-.login-container{
-    backdrop-filter: blur(6px);
-  height: 500px;
-  width:500px;
+/* Background Image */
+.bg-image {
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('your-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Optional: Dark Overlay over background */
+.bg-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Change opacity as needed */
+  z-index: -1;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  height: 100vh;
   display: flex;
-  position:absolute;
   justify-content: center;
   align-items: center;
-  background: #837d7dff;
-  padding: 2rem;
-  box-sizing: border-box;
-  color:blue;
-  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
+/* Container */
+.login-container {
+  z-index: 1;
+  background: rgba(249, 248, 248, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Form */
+.login-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.login-card p {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.login-card input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #7b9acc;
+  box-shadow: 0 0 5px rgba(123, 154, 204, 0.4);
+}
+
+.login-card button {
+  padding: 12px;
+  background-color: #5c6bc0;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #3f51b5;
+}

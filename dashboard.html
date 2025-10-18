@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dshboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+             <h1>Dashboard</h1>
+            <div class="setting-portion">
+                <button class="add-service">Add Service</button>
+                <button class="notification">notification</button>
+                <button class="settings">settings</button>
+            </div>
+        </div>
+       
+        <div class="dashboard-container">
+            <div class="data-card-container">
+                <div class="monthly-icome">
+                    <p>Monthly Income</p>
+                    <h2>₱25,000</h2>
+                </div>
+                <div class="total-sevice">
+                    <p>Total Service</p>
+                    <h2>150</h2>
+                </div>
+                <div class="pending-service">
+                    <p>Pending Service</p>
+                    <h2>5</h2>
+                </div>
+                <div class="add-amount">
+                    <p>Add Amount for Service</p>
+                    <button class="add-Amount-service">Add Amount</button>
+                </div>
+            </div>
+            <div class="service-table-container">
+                <table class="service-table">
+                    <thead>
+                    <tr>
+                        <th>Service Name</th>
+                        <th>Client</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th></th> <!-- For menu icon -->
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Website Redesign</td>
+                        <td>John Doe</td>
+                        <td>2023-10-26</td>
+                        <td>₱2,500</td>
+                        <td><span class="status completed">Completed</span></td>
+                        <td>⋮</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile App Development</td>
+                        <td>Jane Smith</td>
+                        <td>2023-11-05</td>
+                        <td>₱5,000</td>
+                        <td><span class="status in-progress">In Progress</span></td>
+                        <td>⋮</td>
+                    </tr>
+                    <tr>
+                        <td>Logo Design</td>
+                        <td>Mike Johnson</td>
+                        <td>2023-11-10</td>
+                        <td>₱500</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>⋮</td>
+                    </tr>
+                    <tr>
+                        <td>SEO Optimization</td>
+                        <td>Emily White</td>
+                        <td>2023-09-15</td>
+                        <td>₱1,200</td>
+                        <td><span class="status done">Done</span></td>
+                        <td>⋮</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
