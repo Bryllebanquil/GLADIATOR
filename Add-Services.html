@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Add Services - DAJ Auto Repair</title>
+    <link rel="stylesheet" href="Add-Services.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="add-services-container">
+        <!-- Header -->
+        <header class="page-header">
+            <div class="header-content">
+                <h1><i class="fas fa-plus-circle"></i> Add New Service</h1>
+                <div class="header-actions">
+                    <a href="dashboard.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Service Form -->
+            <div class="form-section">
+                <div class="form-container">
+                    <h2>Service Information</h2>
+                    <form class="service-form" id="serviceForm">
+                        <div class="form-group">
+                            <label for="serviceName">Service Name *</label>
+                            <input type="text" id="serviceName" name="serviceName" required placeholder="Enter service name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceDescription">Description</label>
+                            <textarea id="serviceDescription" name="serviceDescription" rows="4" placeholder="Enter service description"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="servicePrice">Price (₱) *</label>
+                                <div class="price-input-container">
+                                    <span class="currency-symbol">₱</span>
+                                    <input type="number" id="servicePrice" name="servicePrice" required placeholder="0.00" min="0" step="0.01">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceCategory">Category</label>
+                                <select id="serviceCategory" name="serviceCategory">
+                                    <option value="general">General Repairs</option>
+                                    <option value="brake">Brake System</option>
+                                    <option value="maintenance">Maintenance</option>
+                                    <option value="tire">Tire Services</option>
+                                    <option value="electrical">Electrical</option>
+                                    <option value="ac">Air Conditioning</option>
+                                    <option value="exhaust">Exhaust System</option>
+                                    <option value="diagnostic">Diagnostic</option>
+                                    <option value="suspension">Suspension</option>
+                                    <option value="engine">Engine</option>
+                                    <option value="transmission">Transmission</option>
+                                    <option value="detailing">Detailing</option>
+                                    <option value="body">Body & Paint</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-actions">
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-eraser"></i>
+                                Clear Form
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i>
+                                Add Service
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Existing Services Reference -->
+            <div class="services-reference">
+                <h2>Available Service Categories</h2>
+                <div class="services-grid">
+                    <div class="service-category">
+                        <h3><i class="fas fa-wrench"></i> General Repairs</h3>
+                        <p>Engine problems, transmission issues, suspension and steering problems</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-car-brake"></i> Brake System Repairs</h3>
+                        <p>Brake pads, brake discs, brake calipers, and braking system components</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-oil-can"></i> Oil Change & Lubrication</h3>
+                        <p>Regular maintenance, oil changes, fluid checks, and lubrication</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-circle"></i> Tire Services</h3>
+                        <p>Tire rotation, balancing, alignment, and tire replacement</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-battery-half"></i> Battery Replacement</h3>
+                        <p>Testing, charging, and replacing car batteries</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-bolt"></i> Electrical System Repairs</h3>
+                        <p>Electrical problems, lights, wiring, and battery issues</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-snowflake"></i> Air Conditioning Service</h3>
+                        <p>AC system repair and maintenance</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-smog"></i> Exhaust System Repairs</h3>
+                        <p>Exhaust components, mufflers, and catalytic converters</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-search"></i> Diagnostic Services</h3>
+                        <p>Computer system diagnostics and issue identification</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-cog"></i> Wheel Alignment & Balancing</h3>
+                        <p>Wheel alignment and balancing for optimal performance</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-car"></i> Suspension Repairs</h3>
+                        <p>Shocks, struts, and suspension components</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-tachometer-alt"></i> Engine Tune-Up</h3>
+                        <p>Engine optimization for performance and fuel efficiency</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-cogs"></i> Transmission Services</h3>
+                        <p>Transmission fluid changes, repairs, and replacements</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-sparkles"></i> Car Detailing</h3>
+                        <p>Interior and exterior cleaning, waxing, and polishing</p>
+                    </div>
+                    <div class="service-category">
+                        <h3><i class="fas fa-paint-brush"></i> Body & Paint Services</h3>
+                        <p>Body repair and repainting services</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
