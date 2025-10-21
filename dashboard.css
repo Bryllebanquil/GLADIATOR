@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  background-color: #0f1419;
+  background-color: #000000;
 }
 header {
-  background-color: #1a1f2e;
+  background-color: #000000;
   padding: 20px;
   text-align: center;
   color: white;
@@ -24,6 +24,7 @@ header {
     gap: 10px;
 }
 
+
 .add-service, .notification, .settings {
   background-color: #2d3748;
   border: none;
@@ -32,7 +33,42 @@ header {
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
+
+.add-service:hover {
+  background-color: #4a5568;
+  color: white;
+  text-decoration: none;
+}
+.add-service:active {
+  background-color: #1a202c;
+  color: white;
+  text-decoration: none;
+}
+.notification:hover {
+  background-color: #4a5568;
+  color: white;
+  text-decoration: none;
+}
+.notification:active {
+  background-color: #1a202c;
+  color: white;
+  text-decoration: none;
+}
+.settings:hover {
+  background-color: #4a5568;
+  color: white;
+  text-decoration: none;
+}
+.settings:active {
+  background-color: #1a202c;
+  color: white;
+  text-decoration: none;
+}
+
 .data-card-container {
     z-index: 1;
     display: flex;
@@ -154,6 +190,7 @@ h2{
   .data-card-container {
     flex-wrap: wrap;
     gap: 15px;
+
   }
   
   .monthly-icome, .total-sevice, .pending-service, .add-amount {
@@ -347,3 +384,4 @@ h2{
     width: 100%;
   }
 }
+

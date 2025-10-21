@@ -10,15 +10,18 @@
     <img src="src/DAJ.jpg" alt="bg-picture" class="bg-image"/>
     <div class="register-container">
         <h2>Register</h2>
-        <form class="registration-form">
-           <input type="text" name="name" placeholder="Full Name" required /> 
-            <input type="email" name="email" placeholder="Email Address" required />
-            <input type="password" name="password" placeholder="Password" required />
-            <input type="password" name="confirm-password" placeholder="confirm-password" required />
-            <button type="submit">Sign Up</button>
-        </form>
+        <form class="registration-form" action="login.html" method="get">
+    <input type="text" name="name" placeholder="Full Name" required /> 
+    <input type="email" name="email" placeholder="Email Address" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="password" name="confirm-password" placeholder="Confirm Password" required />
+    
+    <div class="Account_duplication">
+        Already have an account? <a href="login.html">Log in</a>
+    </div>
 
-        </div>
+    <button type="submit" class="sign-up-button">Sign Up</button>
+</form>
     </div>
     
 </body>
