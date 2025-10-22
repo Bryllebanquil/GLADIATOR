@@ -4,7 +4,7 @@
 
 ---
 
-##  MEMBERS
+## MEMBERS
 - **Brylle Banquil**
 - **Jinfilman Nacilla**
 - **Rob Dustin Galeos**
@@ -18,7 +18,7 @@ This project is created as a website for **DAJ Auto Repair Shop**, providing onl
 
 ---
 
-##  DAJ AUTO REPAIR SHOP
+## DAJ AUTO REPAIR SHOP
 **Official Facebook Page:**  
 [Visit Facebook](https://www.facebook.com/aelihk)
 
@@ -27,7 +27,8 @@ This project is created as a website for **DAJ Auto Repair Shop**, providing onl
 
 ---
 
-##  PROJECT STRUCTURE
+## PROJECT STRUCTURE
+```
 GLADIATOR/
 │
 ├── src/
@@ -46,14 +47,13 @@ GLADIATOR/
 ├── register.html
 ├── style.css
 └── README.md
-
-
+```
 
 ---
 
-##  PROJECT IMAGES
+## PROJECT IMAGES
 
-###  DAJ Auto Repair Shop Logo
+### DAJ Auto Repair Shop Logo
 ![DAJ Logo](src/DAJ.jpg)
 
 ### Car Repair Section
